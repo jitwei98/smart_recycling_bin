@@ -1,0 +1,48 @@
+IEEE Hackathon
+
+Robot that classifies and recycles
+Raspberry Pi
+Micro sd card
+Arduino Uno
+
+Raspberry Pi
+Micro sd card
+Arduino
+Wires
+Raspberry Pi camera
+Power supply for the Raspberry Pi and servo or solenoid. For powering a micro servo, a 4x AA battery pack is a simple option.
+4 Push button
+10 kilo-ohm 1/4 watt resistor to use as a pull-up resistor with the push button.
+Servo
+
+Communication between Pi, Arduino and Laptop
+- Send and receive packages/strings
+Classification problem
+- Train the model first
+- Must be able to classify images and print to console
+
+Demo:
+We want to educate children on how to recycle properly from a young age and inculcate sustainable practices in them.
+
+Our product is a simple game that allows a fun learning experience for kids to learn about recycling categories
+
+1.	// start the program
+2.	Choose your trash
+3.	Guess what category it belongs to
+4.	Classify the image taken by the pi camera through a Tensorflow Convolutional Neural Network model
+5.	Show the result
+
+Future improvement:
+Classify plastics into their subgroups (recyclable, non-recyclable, needs to be washed)
+Put the game system in kindergarten and/or primary schools
+Implement reward system
+More categories
+Faster image classification time
+
+Q&A
+Why use CNN?
+We read from online sources that say CNN is suitable for image data
+
+How do you train the model?
+We used a pre-trained MobileNet model with an extra layer, and we trained the extra layer with our own dataset
+We trained it in a docker container on our laptop, and transfer the trained model to the Raspberry Pi
