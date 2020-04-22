@@ -1,1 +1,1 @@
-# tinder_for_trash
+# Smart Recycling Bin
