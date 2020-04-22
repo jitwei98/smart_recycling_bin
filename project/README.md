@@ -1,6 +1,6 @@
 Refer to instructions on https://www.tensorflow.org/hub/tutorials/image_retraining
 
-###Capturing training images to build your own dataset
+### Capturing training images to build your own dataset
 Requirements:
 Raspberry Pi 3
 Pi Camera
@@ -12,7 +12,7 @@ camera.capture('/home/pi/photos/plastic/'+str(int(time.time()))+".jpg")
 Step 2:
 python camera.py
 
-###Training the model
+### Training the model
 The model is trained in a docker container with...
 python retrain.py \
     --image_dir ~/photos \
